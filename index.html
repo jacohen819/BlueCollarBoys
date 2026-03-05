@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Collar Boys</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+function showThankYou() {
+    document.getElementById("formSection").style.display = "none";
+    document.getElementById("thankyou").style.display = "block";
+}
+</script>
+
+</head>
+
+<body class="bg-gray-950 text-white">
+
+<header class="border-b border-gray-800">
+<div class="max-w-6xl mx-auto flex justify-between items-center p-6">
+<div class="text-2xl font-bold">Blue Collar Boys</div>
+<nav class="space-x-6 text-gray-300">
+<a href="#services">Services</a>
+<a href="#how">How it works</a>
+<a href="#request">Request Job</a>
+</nav>
+</div>
+</header>
+
+<section class="max-w-6xl mx-auto px-6 py-24 text-center">
+<h1 class="text-5xl font-bold mb-6">Find Local Blue Collar Help Fast</h1>
+<p class="text-gray-400 mb-10">
+Plumbing, HVAC, electrical, roofing, and construction professionals.
+</p>
+
+<div id="services" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Plumbing</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">HVAC</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Electrical</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Roofing</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Construction</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Handyman</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Drywall</div>
+<div class="bg-gray-900 p-6 rounded-xl hover:bg-gray-800 transition">Painting</div>
+</div>
+</section>
+
+<section id="how" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10 text-center">
+<div>
+<h3 class="text-xl font-semibold mb-2">1. Submit a request</h3>
+<p class="text-gray-400">Tell us what job you need done.</p>
+</div>
+
+<div>
+<h3 class="text-xl font-semibold mb-2">2. We match you</h3>
+<p class="text-gray-400">Your request is sent to contractors.</p>
+</div>
+
+<div>
+<h3 class="text-xl font-semibold mb-2">3. Get contacted</h3>
+<p class="text-gray-400">A professional will call or text you.</p>
+</div>
+</section>
+
+<section id="request" class="max-w-3xl mx-auto p-6 pb-24">
+
+<div id="formSection">
+<form action="https://formsubmit.co/brazmonkey887@gmail.com"
+method="POST"
+target="hidden_iframe"
+onsubmit="showThankYou()"
+class="bg-gray-900 p-8 rounded-xl space-y-4">
+
+<input type="hidden" name="_subject" value="New Blue Collar Boys Lead">
+<input type="hidden" name="_captcha" value="false">
+
+<input name="name" class="w-full p-3 rounded bg-gray-800 border border-gray-700"
+placeholder="Name" required>
+
+<input name="phone" class="w-full p-3 rounded bg-gray-800 border border-gray-700"
+placeholder="Phone" required>
+
+<input name="zip" class="w-full p-3 rounded bg-gray-800 border border-gray-700"
+placeholder="Zip Code" required>
+
+<select name="service" class="w-full p-3 rounded bg-gray-800 border border-gray-700" required>
+<option value="">Select Service</option>
+<option>Plumbing</option>
+<option>HVAC</option>
+<option>Electrical</option>
+<option>Roofing</option>
+<option>Construction</option>
+<option>Handyman</option>
+</select>
+
+<textarea name="details"
+class="w-full p-3 rounded bg-gray-800 border border-gray-700"
+placeholder="Describe the job"
+required></textarea>
+
+<button type="submit"
+class="w-full bg-blue-500 hover:bg-blue-600 p-3 rounded font-semibold">
+Request Quote
+</button>
+
+</form>
+</div>
+
+<div id="thankyou" style="display:none;" class="text-center">
+<h2 class="text-3xl font-bold mb-4">Request Sent</h2>
+<p class="text-gray-400 mb-6">A contractor should contact you soon.</p>
+<a href="" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded">Submit another request</a>
+</div>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+</section>
+
+<footer class="border-t border-gray-800 text-center p-6 text-gray-400">
+Blue Collar Boys
+</footer>
+
+</body>
+</html>
